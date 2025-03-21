@@ -25,6 +25,24 @@ namespace SimpleRestAPI.Infra.Database.Context
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
+            modelBuilder.Entity<Employee>().HasData(
+        new Employee {  Id = new Guid("f18534d4-8679-47f4-9b37-25e85bc35f2f"), 
+                        FirstName = "Admin", 
+                        LastName = "Admin", 
+                        BirthDate = new DateTime(), 
+                        City = "Admin City",
+                        DocNumber = "admin",
+                        Email = "ispadoto@gmail.com",
+                        Password = "admin",
+                        RoleId = 1,
+                        Active = true,
+                        ManagerId = null,
+                        ManagerName = "Himself",
+                        Deleted = false,
+                        CreatedAt = DateTime.Now,
+
+        }
+    );
             // defaults for all models
 
             // decimal fields (if not manually setup)
