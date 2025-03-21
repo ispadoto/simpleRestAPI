@@ -12,7 +12,7 @@ using SimpleRestAPI.Infra.Database.Context;
 namespace SimpleRestAPI.Infra.Database.Migrations
 {
     [DbContext(typeof(SimpleRestDB))]
-    [Migration("20250321135845_AdminSeed_Fix")]
+    [Migration("20250321141029_AdminSeed_Fix")]
     partial class AdminSeed_Fix
     {
         /// <inheritdoc />
