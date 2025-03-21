@@ -1,0 +1,37 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UserSecretsId>9fbc7743-662f-4f72-91f3-038448b84a6d</UserSecretsId>
+    <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
+  </PropertyGroup>
+
+  <ItemGroup>    
+    <PackageReference Include="Aspire.Microsoft.Data.SqlClient" Version="8.2.2" />    
+    <PackageReference Include="Aspire.Microsoft.EntityFrameworkCore.SqlServer" Version="8.2.2" />    
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="8.0.14" />    
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="9.0.3">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+        
+    <PackageReference Include="System.IdentityModel.Tokens.Jwt" Version="8.6.1" />
+    <PackageReference Include="Microsoft.AspNetCore.Authentication" Version="2.3.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.Abstractions" Version="2.3.0" />
+    <PackageReference Include="Microsoft.IdentityModel.JsonWebTokens" Version="8.6.1" />
+    <!--<PackageReference Include="Microsoft.IdentityModel.Tokens" Version="8.6.1" />-->
+    <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.21.0" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.6.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\SimpleRestAPI.Application\SimpleRestAPI.Application.csproj" />
+    <ProjectReference Include="..\SimpleRestAPI.Domain.Infra.IoC\SimpleRestAPI.Infra.IoC.csproj" />
+    <ProjectReference Include="..\SimpleRestAPI.Infra.Database\SimpleRestAPI.Infra.Database.csproj" />
+    <ProjectReference Include="..\SimpleRestAPI.ServiceDefaults\SimpleRestAPI.ServiceDefaults.csproj" />
+    <ProjectReference Include="..\SimpleRestAPI.Shared\SimpleRestAPI.Shared.csproj" />
+  </ItemGroup>
+
+</Project>

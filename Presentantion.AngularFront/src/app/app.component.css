@@ -1,0 +1,32 @@
+/* Estilos globais para o corpo da aplicação */
+body {
+  margin: 0; /* Remove margens padrão */
+  font-family: 'Arial', sans-serif; /* Fonte com boa legibilidade */
+  background-color: #f5f5f5; /* Cor de fundo suave */
+}
+
+/* Estilo para o contêiner principal */
+.main {
+
+  flex-direction: column; /* Direção da coluna */
+  justify-content: center; /* Centraliza verticalmente */
+  align-items: center; /* Centraliza horizontalmente */
+  height: 100vh; /* Altura total da viewport */
+  text-align: center; /* Centraliza o texto */
+  padding: 20px; /* Adicionando espaço interno */
+}
+
+/* Estilo do título */
+.main h1 {
+  font-size: 2.5rem; /* Tamanho do texto do título */
+  color: #3f51b5; /* Cor do título */
+  margin: 0; /* Remove a margem padrão */
+  padding-bottom: 20px; /* Espaço abaixo do título */
+}
+
+/* Comportamento responsivo */
+@media (max-width: 600px) {
+  .main h1 {
+      font-size: 2rem; /* Dimensões menores em telas menores */
+  }
+}
