@@ -26,20 +26,20 @@ namespace SimpleRestAPI.Infra.Database.Context
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.Entity<Employee>().HasData(
-        new Employee {  Id = new Guid("f18534d4-8679-47f4-9b37-25e85bc35f2f"), 
+            new Employee {  Id = new Guid("f18534d4-8679-47f4-9b37-25e85bc35f2f"), 
                         FirstName = "Admin", 
                         LastName = "Admin", 
-                        BirthDate = new DateTime(), 
+                        BirthDate = Convert.ToDateTime("1981-03-06"), 
                         City = "Admin City",
                         DocNumber = "admin",
                         Email = "ispadoto@gmail.com",
-                        Password = "admin",
+                        Password = "$2b$10$UgbfxfnbHRmTggYq6TUB3.HlbsYHQe.4Jgvt0uc5hi60tIw.LJ7ym",
                         RoleId = 1,
                         Active = true,
                         ManagerId = null,
                         ManagerName = "Himself",
                         Deleted = false,
-                        CreatedAt = DateTime.Now,
+                        CreatedAt = Convert.ToDateTime("1981-03-06"),
 
         }
     );

@@ -93,16 +93,16 @@ namespace SimpleRestAPI.Infra.Database.Migrations
                         {
                             Id = new Guid("f18534d4-8679-47f4-9b37-25e85bc35f2f"),
                             Active = true,
-                            BirthDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            BirthDate = new DateTime(1981, 3, 6, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             City = "Admin City",
-                            CreatedAt = new DateTime(2025, 3, 21, 10, 44, 22, 253, DateTimeKind.Local).AddTicks(8369),
+                            CreatedAt = new DateTime(1981, 3, 6, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Deleted = false,
                             DocNumber = "admin",
                             Email = "ispadoto@gmail.com",
                             FirstName = "Admin",
                             LastName = "Admin",
                             ManagerName = "Himself",
-                            Password = "admin",
+                            Password = "$2b$10$UgbfxfnbHRmTggYq6TUB3.HlbsYHQe.4Jgvt0uc5hi60tIw.LJ7ym",
                             RoleId = 1
                         });
                 });
