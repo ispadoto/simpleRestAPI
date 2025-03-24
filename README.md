@@ -7,6 +7,10 @@
 ### Overview
 A full-stack employee management system built with React, Angular, .NET 8, and SQL Server. The application implements a clean architecture pattern with separation of concerns and follows SOLID principles.
 
+### First Login
+- **Username**: admin
+- **Password**: 123456
+
 ### Architecture
 
 #### Backend (.NET 8)
@@ -92,23 +96,23 @@ git clone https://github.com/yourusername/simpleRestAPIGit.git
 ```
 
 2. Backend Setup:
-    ```bash
+```bash
 cd Presentation.API
 dotnet restore
 dotnet run
-    ```
+```
 
 3. Frontend Setup (React):
-    ```bash
+```bash
 cd presentation.reactfront
 npm install
 npm run dev
-    ```
+```
 
 4. Frontend Setup (Angular):
-    ```bash
+```bash
 cd Presentantion.AngularFront
-    npm install
+npm install
 ng serve
 ```
 
@@ -145,6 +149,10 @@ ng test
 
 ### Visão Geral
 Sistema de gerenciamento de funcionários full-stack construído com React, Angular, .NET 8 e SQL Server. A aplicação implementa o padrão de arquitetura limpa com separação de responsabilidades e segue os princípios SOLID.
+
+### Primeiro Acesso
+- **Usuário**: admin
+- **Senha**: 123456
 
 ### Arquitetura
 
@@ -226,21 +234,21 @@ Sistema de gerenciamento de funcionários full-stack construído com React, Angu
 #### Instalação
 
 1. Clone o repositório:
-    ```bash
+```bash
 git clone https://github.com/yourusername/simpleRestAPIGit.git
-    ```
+```
 
 2. Configuração do Backend:
-    ```bash
+```bash
 cd Presentation.API
 dotnet restore
 dotnet run
-    ```
+```
 
 3. Configuração do Frontend (React):
-    ```bash
+```bash
 cd presentation.reactfront
-    npm install
+npm install
 npm run dev
 ```
 
