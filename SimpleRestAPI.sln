@@ -40,6 +40,8 @@ Project("{54A90642-561A-4BB1-A94E-469ADEE60C69}") = "Presentantion.AngularFront"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimpleRestAPI.Application.Tests", "SimpleRestAPI.Application.Tests\SimpleRestAPI.Application.Tests.csproj", "{4C555319-799C-429F-85D4-FECA5F3CC979}"
 EndProject
+Project("{54A90642-561A-4BB1-A94E-469ADEE60C69}") = "presentation.reactfront", "Presentation.ReactFront\presentation.reactfront.esproj", "{8574A69F-9BF6-262F-6783-9685240B28FC}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -88,6 +90,12 @@ Global
 		{4C555319-799C-429F-85D4-FECA5F3CC979}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4C555319-799C-429F-85D4-FECA5F3CC979}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4C555319-799C-429F-85D4-FECA5F3CC979}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8574A69F-9BF6-262F-6783-9685240B28FC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8574A69F-9BF6-262F-6783-9685240B28FC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8574A69F-9BF6-262F-6783-9685240B28FC}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{8574A69F-9BF6-262F-6783-9685240B28FC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8574A69F-9BF6-262F-6783-9685240B28FC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8574A69F-9BF6-262F-6783-9685240B28FC}.Release|Any CPU.Deploy.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -103,6 +111,7 @@ Global
 		{49233DAA-A864-45C5-BE91-FA86FB79503C} = {A5401024-562D-4D19-A68B-D80A4F90317B}
 		{639C9F8B-861C-B0BD-4FAF-CBA28F2920E6} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
 		{4C555319-799C-429F-85D4-FECA5F3CC979} = {29D71FDD-6250-4F3F-A064-EEE3406B33AE}
+		{8574A69F-9BF6-262F-6783-9685240B28FC} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {223D74B9-3B53-40B4-BDCE-CFEAFD5C3427}

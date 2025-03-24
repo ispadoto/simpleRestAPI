@@ -1,0 +1,130 @@
+.employee-grid-container {
+    width: 100%;
+    overflow-x: auto;
+    margin: 20px 0;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.employee-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 14px;
+}
+
+.employee-table th,
+.employee-table td {
+    padding: 12px 16px;
+    text-align: left;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.employee-table th {
+    background-color: #f5f5f5;
+    font-weight: 600;
+    color: #333;
+    text-transform: uppercase;
+    font-size: 12px;
+    letter-spacing: 0.5px;
+}
+
+.employee-table tr:hover {
+    background-color: #f8f9fa;
+}
+
+.employee-table td {
+    color: #444;
+}
+
+.employee-actions {
+    display: flex;
+    gap: 8px;
+    justify-content: flex-start;
+}
+
+.edit-btn,
+.delete-btn {
+    padding: 6px 12px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 12px;
+    transition: all 0.2s ease;
+}
+
+.edit-btn {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.edit-btn:hover {
+    background-color: #45a049;
+}
+
+.delete-btn {
+    background-color: #f44336;
+    color: white;
+}
+
+.delete-btn:hover {
+    background-color: #da190b;
+}
+
+.error-message {
+    background-color: #ffebee;
+    color: #c62828;
+    padding: 12px;
+    border-radius: 4px;
+    margin: 16px 0;
+    text-align: center;
+}
+
+.no-data-message {
+    background-color: #f5f5f5;
+    color: #666;
+    padding: 20px;
+    border-radius: 4px;
+    margin: 16px 0;
+    text-align: center;
+    font-size: 14px;
+    border: 1px dashed #ddd;
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 1200px) {
+    .employee-table {
+        font-size: 13px;
+    }
+    
+    .employee-table th,
+    .employee-table td {
+        padding: 10px 12px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .employee-grid-container {
+        margin: 10px 0;
+    }
+    
+    .employee-table {
+        font-size: 12px;
+    }
+    
+    .employee-table th,
+    .employee-table td {
+        padding: 8px 10px;
+    }
+    
+    .employee-actions {
+        flex-direction: column;
+        gap: 4px;
+    }
+    
+    .edit-btn,
+    .delete-btn {
+        width: 100%;
+        padding: 4px 8px;
+    }
+} 

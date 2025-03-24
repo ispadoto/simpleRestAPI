@@ -1,4 +1,5 @@
 using Aspire.Hosting;
+using Google.Protobuf.WellKnownTypes;
 
 var builder = DistributedApplication.CreateBuilder(args);
 
@@ -19,6 +20,15 @@ var restAPI = builder.AddProject<Projects.Presentation_API>("presentation-api")
 builder.AddNpmApp("Frontend-Angular", "../Presentantion.AngularFront")
     .WithReference(restAPI)
     .WaitFor(restAPI)
+    .WithHttpEndpoint(env: "PORT")
+    .WithExternalHttpEndpoints()
+    .PublishAsDockerFile();
+
+// Depois o frontend React
+builder.AddNpmApp("Frontend-React", "../Presentation.ReactFront")
+    .WithReference(restAPI)
+    .WaitFor(restAPI)
+    .WithEnvironment("BROWSER", "none") // Disable opening browser on npm start
     .WithHttpEndpoint(env: "PORT")
     .WithExternalHttpEndpoints()
     .PublishAsDockerFile();
